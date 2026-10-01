@@ -1,6 +1,7 @@
 import React from 'react';
 
 interface CategoryPillsProps {
+  /** Category labels must be unique. */
   categories: readonly string[];
   selectedCategories: Set<string>;
   toggleCategory: (category: string) => void;
